@@ -1,0 +1,112 @@
+body{
+    background-color: #fb2b2b;
+    margin: 0;
+}
+.wrapper{
+
+}
+.wrapper .column{
+    display: inline-block;
+    width: 29%;
+    padding: 2%;
+}
+
+svg{
+    max-width: 100%;
+}
+
+
+
+/*CSS KEYFRAME ANIMATION*/
+.bg-active{
+    animation:
+            flicker 1.1s,
+            resize 0.6s;
+    animation-delay:
+            0s,
+            1.1s;
+}
+@keyframes flicker {
+    0%   { width:150px; height:150px; opacity: 0; }
+    18%   { opacity: 1; }
+    36%   { opacity: 0; }
+    45%   { opacity: 1; }
+    54%   { opacity: 0; }
+    63%   { opacity: 1; }
+    72%   { opacity: 0; }
+    81%   { opacity: 1; }
+    90%   { opacity: 0; }
+    100%   { width:150px; height:150px; opacity: 1; }
+}
+@keyframes resize {
+    0%  { width:150px; height:150px; }
+    16% { width:150px; }
+    50% { height:100%; }
+    100%{width:100%;}
+}
+
+.c-active{
+    animation: slide-in 0.3s;
+    animation-delay: 1.7s;
+    animation-fill-mode: both;
+}
+.t-active{
+    animation: slide-in 0.3s;
+    animation-delay: 1.8s;
+    animation-fill-mode: both;
+}
+.s-active{
+    animation: slide-in 0.3s;
+    animation-delay: 1.9s;
+    animation-fill-mode: both;
+}
+.l-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.r-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
+}
+.a2-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.2s;
+    animation-fill-mode: both;
+}
+.i-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.3s;
+    animation-fill-mode: both;
+}
+.s2-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.4s;
+    animation-fill-mode: both;
+}
+.i2-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+.a-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.6s;
+    animation-fill-mode: both;
+}
+.m-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.7s;
+    animation-fill-mode: both;
+}
+.c2-active{
+    animation: slide-in 0.3s;
+    animation-delay: 2.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in {
+    0%  { transform: translateY(-150px); opacity: 0; }
+    100%{ transform: translateY(0); opacity: 1; }
+}
